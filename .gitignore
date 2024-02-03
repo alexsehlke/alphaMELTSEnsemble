@@ -8,8 +8,6 @@ Session.vim
 
 # Ignore files used while running
 ComputeScratchSpace*/
-alphamelts
-macosx_alphamelts*/
 
 # Ignore run stuff
 __pycache__
