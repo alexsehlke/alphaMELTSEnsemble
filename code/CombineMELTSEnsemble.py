@@ -4,13 +4,8 @@
 # to explore some parameter space (we'll call it an ensemble here).
 import numpy as np
 import matplotlib.pyplot as plt
-import sys, os
-import shutil
-import tempfile
-from collections import OrderedDict
-from pathlib import Path
+import os
 import deepdish as dd
-import itertools
 import pandas as pd
 from collections import Mapping, Container 
 from sys import getsizeof

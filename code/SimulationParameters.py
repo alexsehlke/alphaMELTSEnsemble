@@ -1,7 +1,7 @@
 import os
 from collections import OrderedDict
 import numpy as np
-from CombineMELTSEnsemble import Make2DCrossSection, Plot2DCrossSection
+from CombineMELTSEnsemble import Make2DCrossSection
 
 # Only needs to be done if changing bulk composition or initial conditions/parameterization.
 DoMELTSSims = True

@@ -1,15 +1,11 @@
-import platform
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import use
 use('AGG')
 import pandas as pd
 import re
-from pprint import pprint
-import platform
-import os, sys, shutil
+import os
 from io import StringIO
-import pickle
 from rich.traceback import install; install()
 
 # Plotting is great, but slows things down by about 3x.  So if you just want the final plots from PlotParameterSpace.py you can disable the plotting of each phase composition and fit index here.
@@ -43,7 +39,7 @@ def ProcessAlphaMELTS(DirName=os.getcwd(), TargetCompositions=dict()):
     if PhaseData is not None:
          PlotPhaseMasses(PhaseData, DirName)
     else:
-        print ('Error!  No phase masses section in %s. Skipping.' % FileName)
+        print ('Error!  No phase masses section in %s. Skipping.' % DirName)
 
     # Put all the phases into a dictionary for easy access
     PhasesData = dict()

@@ -3,9 +3,8 @@
 # The purpose of this file is to take inputs and generate a bunch of MELTS calculations
 # to explore some parameter space (we'll call it an ensemble here).
 import numpy as np
-import sys, os
+import os
 import shutil
-import tempfile
 from collections import OrderedDict
 from pathlib import Path
 import deepdish as dd
