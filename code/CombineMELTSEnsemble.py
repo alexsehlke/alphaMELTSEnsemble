@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import os
 import deepdish as dd
 import pandas as pd
-from collections import Mapping, Container 
+from collections.abc import Mapping, Container 
 from sys import getsizeof
 import h5py
 
