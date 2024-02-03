@@ -3,6 +3,24 @@ Code to run a large number of alphaMELTS simulations and to plot the outputs fro
 
 There is a quick video introduction to the code available here:  https://www.youtube.com/watch?v=AyIksocsp4M&t=810s
 
+## Installation
+
+```sh
+brew install pyenv pyenv-virtualenv  # to manage virtual environments
+brew install hdf5  # for specific alphaMELTSEnsemble dependency
+
+pyenv install 3.11  # install python3.11 as your base interpreter
+
+cd <your alphaMELTAEnsemble directory>
+pyenv virtualenv 3.11 alphamelts  # create a virtual "alphamelts" environment based on 3.11
+pyenv local alphamelts  # always select alphamelts interpreter when in this directory
+
+pip install --upgrade pip setuptools  # upgrade the base tooling within alphamelts environment
+pip install -r requirements.txt  # install dependencies of alphaMELTSEnsemble
+```
+
+## About
+
 [alphaMELTS](https://magmasource.caltech.edu/alphameltys/) is an interface to the MELTS software for equilibrium mineral thermodynamics.  
 While alphaMELTS is very capable at setting up elaborate thermochemical calculations there are some cases where it would be useful to run multiple calculations in alphaMELTS and combine them into one dataset for analysis.
 For example, one alphaMELTS calculation may track the equilibrium composition of a melt as it cools and its tied to an oxygen fugacity buffer.
