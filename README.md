@@ -5,19 +5,7 @@ There is a quick video introduction to the code available here:  https://www.you
 
 ## Installation
 
-```sh
-brew install pyenv pyenv-virtualenv  # to manage virtual environments
-brew install hdf5 parallel  # for specific alphaMELTSEnsemble dependencies
-
-pyenv install 3.11  # install python3.11 as your base interpreter
-
-cd <your alphaMELTAEnsemble directory>
-pyenv virtualenv 3.11 alphamelts  # create a virtual "alphamelts" environment based on 3.11
-pyenv local alphamelts  # always select alphamelts interpreter when in this directory
-
-pip install --upgrade pip setuptools  # upgrade the base tooling within alphamelts environment
-pip install -r requirements.txt  # install dependencies of alphaMELTSEnsemble
-```
+Run `./install.sh` from within this directory. It assumes you have `brew` available already, but it will install other dependencies as necessary and provision an `alphamelts` virtual python environment if you don't already have one.
 
 ## About
 
