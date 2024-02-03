@@ -7,7 +7,7 @@ There is a quick video introduction to the code available here:  https://www.you
 
 ```sh
 brew install pyenv pyenv-virtualenv  # to manage virtual environments
-brew install hdf5  # for specific alphaMELTSEnsemble dependency
+brew install hdf5 parallel  # for specific alphaMELTSEnsemble dependencies
 
 pyenv install 3.11  # install python3.11 as your base interpreter
 
