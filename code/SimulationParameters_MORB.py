@@ -18,25 +18,25 @@ ComputeScratchSpace = os.path.join(os.path.dirname(os.path.abspath(__file__)), '
 
 # Constant inputs
 ConstantInputs = dict()
-ConstantInputs['Title'] = 'VaryfO2_Mars_Picrite'
+ConstantInputs['Title'] = 'VaryfO2'
 ConstantInputs['Buffer'] = 'QFM'
 # Set the temperature.  Because this is a single value, there will only be an initial temperature entry made in the inputs melt file.
-ConstantInputs['T'] = 2000 # Temperature
+ConstantInputs['T'] = 1600 # Temperature
 ConstantInputs['P'] = 1 # Bar
 # And so for all the elements.
-ConstantInputs['SiO2'] = 42.25
-ConstantInputs['TiO2'] = 0.48
-ConstantInputs['Al2O3'] = 9.71
-ConstantInputs['Cr2O3'] = 0.54
-ConstantInputs['Fe2O3'] = 0.91
-ConstantInputs['FeO'] = 17.25
-ConstantInputs['MnO'] = 0.26
-ConstantInputs['MgO'] = 11.18
-ConstantInputs['CaO'] = 12.59
-ConstantInputs['Na2O'] = 4.06
-ConstantInputs['K2O'] =  0.08
-ConstantInputs['P2O5'] =  0.68
-ConstantInputs['H2O'] =  0.00
+ConstantInputs['SiO2'] = 48.68
+ConstantInputs['TiO2'] = 1.01
+ConstantInputs['Al2O3'] = 17.64
+ConstantInputs['Cr2O3'] = 0.03
+ConstantInputs['Fe2O3'] = 0.89
+ConstantInputs['FeO'] = 7.59
+ConstantInputs['MnO'] = 0.00
+ConstantInputs['MgO'] = 9.10
+ConstantInputs['CaO'] = 12.45
+ConstantInputs['Na2O'] = 2.65
+ConstantInputs['K2O'] =  0.03
+ConstantInputs['P2O5'] =  0.08
+ConstantInputs['H2O'] =  0.20
 ConstantInputs['NiO'] = 0.00
 
 # Set up the inputs to the simulation that vary.
